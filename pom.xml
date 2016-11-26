@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>edu.osu.blackjack</groupId>
-  <artifactId>hw3</artifactId>
+  <groupId>osu.cs362.URLValidator</groupId>
+  <artifactId>URLValidatorTest</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>hw3</name>
+  <name>URLValidatorTest</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -63,31 +63,7 @@
 	<useFile>false</useFile>
       </configuration>
 
-	</plugin>      
-
-
-
-    <plugin>
-    <groupId>org.pitest</groupId>
-    <artifactId>pitest-maven</artifactId>
-    <version>1.1.10</version>
-    <configuration>
-        <targetClasses>
-            <param>edu.osu.URLValidator.DomainValidator</param>
-        </targetClasses>
-        <targetTests>
-            <param>edu.osu.URLValidator.DomainValidatorTest</param>
-        </targetTests>
-    <maxMutationsPerClass>
-      100
-    </maxMutationsPerClass>
-    <timeoutConstant>
-      100
-    </timeoutConstant>
-
-    </configuration>
-</plugin>
-
+	  </plugin>
 
 
     <plugin>
@@ -96,10 +72,10 @@
         <version>1.1.10</version>
         <configuration>
             <targetClasses>
-                <param>edu.osu.URLValidator.*</param>
+                <param>osu.cs362.URLValidator.*</param>
             </targetClasses>
             <targetTests>
-                <param>edu.osu.URLValidator.DomainValidatorTest*</param>
+                <param>osu.cs362.URLValidator.DomainValidatorTest*</param>
             </targetTests>
         </configuration>
     </plugin>
